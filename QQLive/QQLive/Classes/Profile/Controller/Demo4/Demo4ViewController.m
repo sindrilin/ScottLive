@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *v = [[UIView alloc]  initWithFrame:CGRectMake(10, 10, 200, 200)];
+    UIView *v = [[UIView alloc]  initWithFrame:CGRectMake(10, 10, 50, 50)];
     v.backgroundColor = [UIColor redColor];
     [self.view addSubview:v];
     
@@ -30,6 +30,24 @@
     btn.center = v.center;
     [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [v addSubview:btn];
+    
+    
+    
+    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightBtn.backgroundColor = [UIColor blueColor];
+    rightBtn.frame = CGRectMake(0, 0, 80, 30);
+    [rightBtn setTitle:@"添加好友" forState:UIControlStateNormal];
+    [rightBtn addTarget:self action:@selector(addFriendClick:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+
+    self.navigationItem.rightBarButtonItems = @[addItem,flexibleSpace];
+}
+
+- (void)addFriendClick:(UIButton *)btn {
+    ScottPopMenu *popMenu = [ScottPopMenu popMenuRelyOnView:btn withTitles:titles icons:icon menuWidth:120 delegate:self];
+    popMenu.textFontSize = 12;
 }
 
 - (void)btnClick:(UIButton *)btn {
