@@ -42,6 +42,8 @@ typedef NS_ENUM(NSInteger, ScottPopMenuType) {
 @property (nonatomic, strong) UIColor *textColor;
 // Default is 0（设置偏移距离）
 @property (nonatomic, assign) CGFloat offset;
+// Default is YES (当有导航栏的时候，注意此处属性)
+@property (nonatomic, assign, getter=isTranslucent) BOOL translucent;
 
 // Default is ScottPopMenuTypeDefault (设置类型)
 @property (nonatomic, assign) ScottPopMenuType popMenuType;

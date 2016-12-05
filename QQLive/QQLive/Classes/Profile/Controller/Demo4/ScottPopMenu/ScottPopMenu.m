@@ -135,6 +135,8 @@
 @property (nonatomic, strong) UIView *bgView;
 @property (nonatomic, assign) CGPoint anchorPoint;
 
+@property (nonatomic, assign) CGPoint touchPoint;
+
 
 @end
 
@@ -206,6 +208,7 @@
     
     _dismissOnSelect = YES;
     _dismissOnTapOutside = YES;
+    _translucent = YES;
     
     _textFontSize = 15.0;
     
@@ -258,6 +261,7 @@
 
 + (instancetype)popMenuAtPoint:(CGPoint)point withTitles:(NSArray *)titles icons:(NSArray *)icons menuWidth:(CGFloat)menuWidth delegate:(id<ScottPopMenuDelegate>)delegate {
     ScottPopMenu *popMenu = [[ScottPopMenu alloc] initWithTitles:titles icons:icons menuWidth:menuWidth delegate:delegate];
+    popMenu.touchPoint = point;
     [popMenu showAtPoint:point];
     return popMenu;
 }
@@ -274,6 +278,8 @@
 }
 
 - (CAShapeLayer *)getMaskLayerWithPoint:(CGPoint)point {
+    
+    
     [self setArrowWithPoint:point];
     
     CAShapeLayer *layer = [self drawMaskLayer];
@@ -334,10 +340,13 @@
     self.frame = originRect;
 }
 
+
+
 - (void)setArrowWithPoint:(CGPoint)point {
     _anchorPoint = point;
     
     self.x = point.x - _arrowPosition - 0.5 * _arrowWidth;
+    
     self.y = point.y;
     
     CGFloat maxX = CGRectGetMaxX(self.frame);
@@ -528,6 +537,26 @@
         self.layer.shadowOpacity = 0.0;
         self.layer.shadowRadius = 0.0;
     }
+}
+
+- (void)setTranslucent:(BOOL)translucent {
+    _translucent = translucent;
+    
+    if (self.touchPoint.x == 0 && self.touchPoint.y == 0) {
+        return;
+    }
+    
+    if (_translucent == YES) {
+        [self showAtPoint:self.touchPoint];
+    }else{
+        CGPoint tmpPoint = self.touchPoint;
+        tmpPoint.y = tmpPoint.y + 64;
+        [self showAtPoint:tmpPoint];
+    }
+}
+
+- (void)dealloc {
+    NSLog(@"%s",__FUNCTION__);
 }
 
 @end

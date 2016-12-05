@@ -25,14 +25,24 @@
     UIView *v = [[UIView alloc]  initWithFrame:CGRectMake(10, 10, 200, 200)];
     v.backgroundColor = [UIColor redColor];
     [self.view addSubview:v];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.center = v.center;
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [v addSubview:btn];
+}
+
+- (void)btnClick:(UIButton *)btn {
+    ScottPopMenu *popMenu = [ScottPopMenu popMenuRelyOnView:btn withTitles:titles icons:icon menuWidth:120 delegate:self];
+    popMenu.textFontSize = 12;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = touches.anyObject;
     CGPoint point = [touch locationInView:self.view];
-    
 
     ScottPopMenu *popMenu = [ScottPopMenu popMenuAtPoint:point withTitles:titles icons:icon menuWidth:120 delegate:self];
+    popMenu.translucent = NO;
     popMenu.textFontSize = 12;
 }
 
