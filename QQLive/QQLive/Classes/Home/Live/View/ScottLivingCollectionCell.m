@@ -230,8 +230,7 @@
     descriptor.params[@"speed"] = @(100 * (double)random()/RAND_MAX+50);
     descriptor.params[@"direction"] = @(direction);
     descriptor.params[@"clickAction"] = ^{
-        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"弹幕被点击" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil];
-        [alertView show];
+        NSLog(@"弹幕被点击");
     };
     return descriptor;
 }

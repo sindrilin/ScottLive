@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		220D5F891DF01AE600BEF671 /* ScottBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D5F7B1DF01AE500BEF671 /* ScottBaseAnimation.m */; };
-		220D5F8A1DF01AE600BEF671 /* ScottDropDownAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D5F7D1DF01AE500BEF671 /* ScottDropDownAnimation.m */; };
-		220D5F8B1DF01AE600BEF671 /* ScottFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D5F7F1DF01AE500BEF671 /* ScottFadeAnimation.m */; };
-		220D5F8C1DF01AE600BEF671 /* ScottScaleFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D5F811DF01AE500BEF671 /* ScottScaleFadeAnimation.m */; };
-		220D5F8D1DF01AE600BEF671 /* ScottAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D5F841DF01AE600BEF671 /* ScottAlertView.m */; };
-		220D5F8E1DF01AE600BEF671 /* UIView+ScottAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D5F861DF01AE600BEF671 /* UIView+ScottAutoLayout.m */; };
-		220D5F8F1DF01AE600BEF671 /* ScottAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220D5F881DF01AE600BEF671 /* ScottAlertViewController.m */; };
 		2235A1121DEE82E40072B7FF /* ScottLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235A1101DEE82E40072B7FF /* ScottLayerViewController.m */; };
 		2235A1131DEE82E40072B7FF /* ScottLayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2235A1111DEE82E40072B7FF /* ScottLayerViewController.xib */; };
 		2235A1161DEE83790072B7FF /* ScottCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235A1151DEE83790072B7FF /* ScottCircleView.m */; };
@@ -102,29 +95,28 @@
 		22E4B3AD1DE6CAF3007BF365 /* UIBarButtonItem+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E4B3AC1DE6CAF3007BF365 /* UIBarButtonItem+ScottExtension.m */; };
 		22E4B3B01DE6CB03007BF365 /* UIButton+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E4B3AF1DE6CB03007BF365 /* UIButton+ScottExtension.m */; };
 		22E4B3B41DE6D1BC007BF365 /* UIDevice+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E4B3B31DE6D1BC007BF365 /* UIDevice+ScottExtension.m */; };
-		22E4B3B71DE6D416007BF365 /* NSObject+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E4B3B61DE6D416007BF365 /* NSObject+ScottExtension.m */; };
 		22E4B3BD1DE6DE51007BF365 /* ScottH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E4B3BC1DE6DE51007BF365 /* ScottH264Encoder.m */; };
 		22E4B3C01DE6DFA4007BF365 /* ScottGPUBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E4B3BF1DE6DFA4007BF365 /* ScottGPUBeautifyFilter.m */; };
+		6770DBB11DF59987002CE852 /* CustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBA51DF59987002CE852 /* CustomActionSheet.m */; };
+		6770DBB21DF59987002CE852 /* CustomActionSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6770DBA61DF59987002CE852 /* CustomActionSheet.xib */; };
+		6770DBB31DF59987002CE852 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBA81DF59987002CE852 /* CustomAlertView.m */; };
+		6770DBB41DF59987002CE852 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6770DBA91DF59987002CE852 /* CustomAlertView.xib */; };
+		6770DBCC1DF599CE002CE852 /* ScottBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBBA1DF599CE002CE852 /* ScottBaseAnimation.m */; };
+		6770DBCD1DF599CE002CE852 /* ScottDropDownAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBBC1DF599CE002CE852 /* ScottDropDownAnimation.m */; };
+		6770DBCE1DF599CE002CE852 /* ScottFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBBE1DF599CE002CE852 /* ScottFadeAnimation.m */; };
+		6770DBCF1DF599CE002CE852 /* ScottScaleFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBC01DF599CE002CE852 /* ScottScaleFadeAnimation.m */; };
+		6770DBD01DF599CE002CE852 /* ScottAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBC31DF599CE002CE852 /* ScottAlertView.m */; };
+		6770DBD11DF599CE002CE852 /* ScottShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBC51DF599CE002CE852 /* ScottShowAlertView.m */; };
+		6770DBD21DF599CE002CE852 /* UIView+ScottAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBC71DF599CE002CE852 /* UIView+ScottAlertView.m */; };
+		6770DBD31DF599CE002CE852 /* UIView+ScottAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBC91DF599CE002CE852 /* UIView+ScottAutoLayout.m */; };
+		6770DBD41DF599CE002CE852 /* ScottAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBCB1DF599CE002CE852 /* ScottAlertViewController.m */; };
+		6770DBD61DF59A8F002CE852 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 6770DBD51DF59A8F002CE852 /* Foundation+Log.m */; };
 		67C38DF81DF26947006A4783 /* Demo4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C38DF61DF26947006A4783 /* Demo4ViewController.m */; };
 		67C38DF91DF26947006A4783 /* Demo4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67C38DF71DF26947006A4783 /* Demo4ViewController.xib */; };
 		CC37968CD6C514BFCCC1FD0B /* Pods_QQLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7331BA17190741E2F4209404 /* Pods_QQLive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		220D5F7A1DF01AE500BEF671 /* ScottBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottBaseAnimation.h; sourceTree = "<group>"; };
-		220D5F7B1DF01AE500BEF671 /* ScottBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottBaseAnimation.m; sourceTree = "<group>"; };
-		220D5F7C1DF01AE500BEF671 /* ScottDropDownAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottDropDownAnimation.h; sourceTree = "<group>"; };
-		220D5F7D1DF01AE500BEF671 /* ScottDropDownAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottDropDownAnimation.m; sourceTree = "<group>"; };
-		220D5F7E1DF01AE500BEF671 /* ScottFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottFadeAnimation.h; sourceTree = "<group>"; };
-		220D5F7F1DF01AE500BEF671 /* ScottFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottFadeAnimation.m; sourceTree = "<group>"; };
-		220D5F801DF01AE500BEF671 /* ScottScaleFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottScaleFadeAnimation.h; sourceTree = "<group>"; };
-		220D5F811DF01AE500BEF671 /* ScottScaleFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottScaleFadeAnimation.m; sourceTree = "<group>"; };
-		220D5F831DF01AE600BEF671 /* ScottAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottAlertView.h; sourceTree = "<group>"; };
-		220D5F841DF01AE600BEF671 /* ScottAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottAlertView.m; sourceTree = "<group>"; };
-		220D5F851DF01AE600BEF671 /* UIView+ScottAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScottAutoLayout.h"; sourceTree = "<group>"; };
-		220D5F861DF01AE600BEF671 /* UIView+ScottAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScottAutoLayout.m"; sourceTree = "<group>"; };
-		220D5F871DF01AE600BEF671 /* ScottAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottAlertViewController.h; sourceTree = "<group>"; };
-		220D5F881DF01AE600BEF671 /* ScottAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottAlertViewController.m; sourceTree = "<group>"; };
 		2235A10F1DEE82E40072B7FF /* ScottLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottLayerViewController.h; sourceTree = "<group>"; };
 		2235A1101DEE82E40072B7FF /* ScottLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottLayerViewController.m; sourceTree = "<group>"; };
 		2235A1111DEE82E40072B7FF /* ScottLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottLayerViewController.xib; sourceTree = "<group>"; };
@@ -270,12 +262,35 @@
 		22E4B3AF1DE6CB03007BF365 /* UIButton+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ScottExtension.m"; sourceTree = "<group>"; };
 		22E4B3B21DE6D1BC007BF365 /* UIDevice+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ScottExtension.h"; sourceTree = "<group>"; };
 		22E4B3B31DE6D1BC007BF365 /* UIDevice+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ScottExtension.m"; sourceTree = "<group>"; };
-		22E4B3B51DE6D416007BF365 /* NSObject+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ScottExtension.h"; sourceTree = "<group>"; };
-		22E4B3B61DE6D416007BF365 /* NSObject+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ScottExtension.m"; sourceTree = "<group>"; };
 		22E4B3BB1DE6DE51007BF365 /* ScottH264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottH264Encoder.h; sourceTree = "<group>"; };
 		22E4B3BC1DE6DE51007BF365 /* ScottH264Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottH264Encoder.m; sourceTree = "<group>"; };
 		22E4B3BE1DE6DFA4007BF365 /* ScottGPUBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottGPUBeautifyFilter.h; sourceTree = "<group>"; };
 		22E4B3BF1DE6DFA4007BF365 /* ScottGPUBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottGPUBeautifyFilter.m; sourceTree = "<group>"; };
+		6770DBA41DF59987002CE852 /* CustomActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActionSheet.h; sourceTree = "<group>"; };
+		6770DBA51DF59987002CE852 /* CustomActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActionSheet.m; sourceTree = "<group>"; };
+		6770DBA61DF59987002CE852 /* CustomActionSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomActionSheet.xib; sourceTree = "<group>"; };
+		6770DBA71DF59987002CE852 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		6770DBA81DF59987002CE852 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		6770DBA91DF59987002CE852 /* CustomAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
+		6770DBB91DF599CE002CE852 /* ScottBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottBaseAnimation.h; sourceTree = "<group>"; };
+		6770DBBA1DF599CE002CE852 /* ScottBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottBaseAnimation.m; sourceTree = "<group>"; };
+		6770DBBB1DF599CE002CE852 /* ScottDropDownAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottDropDownAnimation.h; sourceTree = "<group>"; };
+		6770DBBC1DF599CE002CE852 /* ScottDropDownAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottDropDownAnimation.m; sourceTree = "<group>"; };
+		6770DBBD1DF599CE002CE852 /* ScottFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottFadeAnimation.h; sourceTree = "<group>"; };
+		6770DBBE1DF599CE002CE852 /* ScottFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottFadeAnimation.m; sourceTree = "<group>"; };
+		6770DBBF1DF599CE002CE852 /* ScottScaleFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottScaleFadeAnimation.h; sourceTree = "<group>"; };
+		6770DBC01DF599CE002CE852 /* ScottScaleFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottScaleFadeAnimation.m; sourceTree = "<group>"; };
+		6770DBC21DF599CE002CE852 /* ScottAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottAlertView.h; sourceTree = "<group>"; };
+		6770DBC31DF599CE002CE852 /* ScottAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottAlertView.m; sourceTree = "<group>"; };
+		6770DBC41DF599CE002CE852 /* ScottShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottShowAlertView.h; sourceTree = "<group>"; };
+		6770DBC51DF599CE002CE852 /* ScottShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottShowAlertView.m; sourceTree = "<group>"; };
+		6770DBC61DF599CE002CE852 /* UIView+ScottAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScottAlertView.h"; sourceTree = "<group>"; };
+		6770DBC71DF599CE002CE852 /* UIView+ScottAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScottAlertView.m"; sourceTree = "<group>"; };
+		6770DBC81DF599CE002CE852 /* UIView+ScottAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScottAutoLayout.h"; sourceTree = "<group>"; };
+		6770DBC91DF599CE002CE852 /* UIView+ScottAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScottAutoLayout.m"; sourceTree = "<group>"; };
+		6770DBCA1DF599CE002CE852 /* ScottAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottAlertViewController.h; sourceTree = "<group>"; };
+		6770DBCB1DF599CE002CE852 /* ScottAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottAlertViewController.m; sourceTree = "<group>"; };
+		6770DBD51DF59A8F002CE852 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		67C38DF51DF26947006A4783 /* Demo4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4ViewController.h; sourceTree = "<group>"; };
 		67C38DF61DF26947006A4783 /* Demo4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo4ViewController.m; sourceTree = "<group>"; };
 		67C38DF71DF26947006A4783 /* Demo4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Demo4ViewController.xib; sourceTree = "<group>"; };
@@ -307,43 +322,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		220D5F781DF01AE500BEF671 /* ScottAlertController */ = {
-			isa = PBXGroup;
-			children = (
-				220D5F791DF01AE500BEF671 /* ScottAlertAnimations */,
-				220D5F821DF01AE500BEF671 /* ScottAlertView */,
-				220D5F871DF01AE600BEF671 /* ScottAlertViewController.h */,
-				220D5F881DF01AE600BEF671 /* ScottAlertViewController.m */,
-			);
-			path = ScottAlertController;
-			sourceTree = "<group>";
-		};
-		220D5F791DF01AE500BEF671 /* ScottAlertAnimations */ = {
-			isa = PBXGroup;
-			children = (
-				220D5F7A1DF01AE500BEF671 /* ScottBaseAnimation.h */,
-				220D5F7B1DF01AE500BEF671 /* ScottBaseAnimation.m */,
-				220D5F7C1DF01AE500BEF671 /* ScottDropDownAnimation.h */,
-				220D5F7D1DF01AE500BEF671 /* ScottDropDownAnimation.m */,
-				220D5F7E1DF01AE500BEF671 /* ScottFadeAnimation.h */,
-				220D5F7F1DF01AE500BEF671 /* ScottFadeAnimation.m */,
-				220D5F801DF01AE500BEF671 /* ScottScaleFadeAnimation.h */,
-				220D5F811DF01AE500BEF671 /* ScottScaleFadeAnimation.m */,
-			);
-			path = ScottAlertAnimations;
-			sourceTree = "<group>";
-		};
-		220D5F821DF01AE500BEF671 /* ScottAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				220D5F831DF01AE600BEF671 /* ScottAlertView.h */,
-				220D5F841DF01AE600BEF671 /* ScottAlertView.m */,
-				220D5F851DF01AE600BEF671 /* UIView+ScottAutoLayout.h */,
-				220D5F861DF01AE600BEF671 /* UIView+ScottAutoLayout.m */,
-			);
-			path = ScottAlertView;
-			sourceTree = "<group>";
-		};
 		2235A10E1DEE82CE0072B7FF /* Demo1(Layer画圆) */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,10 +338,16 @@
 		2235A1181DEEBA110072B7FF /* Demo2(自定义AlertView) */ = {
 			isa = PBXGroup;
 			children = (
+				6770DBB71DF599CE002CE852 /* ScottAlertController */,
+				6770DBA41DF59987002CE852 /* CustomActionSheet.h */,
+				6770DBA51DF59987002CE852 /* CustomActionSheet.m */,
+				6770DBA61DF59987002CE852 /* CustomActionSheet.xib */,
+				6770DBA71DF59987002CE852 /* CustomAlertView.h */,
+				6770DBA81DF59987002CE852 /* CustomAlertView.m */,
+				6770DBA91DF59987002CE852 /* CustomAlertView.xib */,
 				2249DC7E1DF17DCC00306FAF /* Demo2ViewController.h */,
 				2249DC7F1DF17DCC00306FAF /* Demo2ViewController.m */,
 				2249DC801DF17DCC00306FAF /* Demo2ViewController.xib */,
-				220D5F781DF01AE500BEF671 /* ScottAlertController */,
 			);
 			name = "Demo2(自定义AlertView)";
 			path = Demo2;
@@ -522,8 +506,6 @@
 			isa = PBXGroup;
 			children = (
 				225A861B1DDD893400A59E38 /* Controller */,
-				22E4B3B51DE6D416007BF365 /* NSObject+ScottExtension.h */,
-				22E4B3B61DE6D416007BF365 /* NSObject+ScottExtension.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -544,6 +526,7 @@
 		225A863B1DDD944600A59E38 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6770DBD51DF59A8F002CE852 /* Foundation+Log.m */,
 				226C70071DE4329900A729DC /* UIScreen+ScottExtension.h */,
 				226C70081DE4329900A729DC /* UIScreen+ScottExtension.m */,
 				226C700A1DE432E800A729DC /* UIColor+ScottExtension.h */,
@@ -921,6 +904,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6770DBB71DF599CE002CE852 /* ScottAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				6770DBB81DF599CE002CE852 /* ScottAlertAnimations */,
+				6770DBC11DF599CE002CE852 /* ScottAlertView */,
+				6770DBCA1DF599CE002CE852 /* ScottAlertViewController.h */,
+				6770DBCB1DF599CE002CE852 /* ScottAlertViewController.m */,
+			);
+			path = ScottAlertController;
+			sourceTree = "<group>";
+		};
+		6770DBB81DF599CE002CE852 /* ScottAlertAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				6770DBB91DF599CE002CE852 /* ScottBaseAnimation.h */,
+				6770DBBA1DF599CE002CE852 /* ScottBaseAnimation.m */,
+				6770DBBB1DF599CE002CE852 /* ScottDropDownAnimation.h */,
+				6770DBBC1DF599CE002CE852 /* ScottDropDownAnimation.m */,
+				6770DBBD1DF599CE002CE852 /* ScottFadeAnimation.h */,
+				6770DBBE1DF599CE002CE852 /* ScottFadeAnimation.m */,
+				6770DBBF1DF599CE002CE852 /* ScottScaleFadeAnimation.h */,
+				6770DBC01DF599CE002CE852 /* ScottScaleFadeAnimation.m */,
+			);
+			path = ScottAlertAnimations;
+			sourceTree = "<group>";
+		};
+		6770DBC11DF599CE002CE852 /* ScottAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				6770DBC21DF599CE002CE852 /* ScottAlertView.h */,
+				6770DBC31DF599CE002CE852 /* ScottAlertView.m */,
+				6770DBC41DF599CE002CE852 /* ScottShowAlertView.h */,
+				6770DBC51DF599CE002CE852 /* ScottShowAlertView.m */,
+				6770DBC61DF599CE002CE852 /* UIView+ScottAlertView.h */,
+				6770DBC71DF599CE002CE852 /* UIView+ScottAlertView.m */,
+				6770DBC81DF599CE002CE852 /* UIView+ScottAutoLayout.h */,
+				6770DBC91DF599CE002CE852 /* UIView+ScottAutoLayout.m */,
+			);
+			path = ScottAlertView;
+			sourceTree = "<group>";
+		};
 		67C38DF41DF26931006A4783 /* Demo4(PopMenu) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1001,6 +1025,7 @@
 				225E19BC1DE82EC90018B34B /* ScottLivingEndView.xib in Resources */,
 				2235A1131DEE82E40072B7FF /* ScottLayerViewController.xib in Resources */,
 				2235A1281DEEC0490072B7FF /* zan@2x.png in Resources */,
+				6770DBB41DF59987002CE852 /* CustomAlertView.xib in Resources */,
 				225E19941DE7CD820018B34B /* ScottCrownViewController.xib in Resources */,
 				226447C21DEC0FDA00817D62 /* ScottCatView.xib in Resources */,
 				225E19B41DE81EEE0018B34B /* ScottLivingCollectionCell.xib in Resources */,
@@ -1017,6 +1042,7 @@
 				22E4B3931DE6C3C8007BF365 /* ScottNewViewController.xib in Resources */,
 				226447BD1DEC032600817D62 /* user.plist in Resources */,
 				22E4B3A51DE6C511007BF365 /* ScottProfileViewController.xib in Resources */,
+				6770DBB21DF59987002CE852 /* CustomActionSheet.xib in Resources */,
 				22E4B3A01DE6C4FF007BF365 /* ScottShowViewController.xib in Resources */,
 				225E19A51DE808BA0018B34B /* ScottLivingCollectionController.xib in Resources */,
 				225E199D1DE7E6C70018B34B /* ScottLiveCell.xib in Resources */,
@@ -1079,24 +1105,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6770DBB31DF59987002CE852 /* CustomAlertView.m in Sources */,
+				6770DBD41DF599CE002CE852 /* ScottAlertViewController.m in Sources */,
 				225E19A81DE80BE50018B34B /* ScottRefreshView.m in Sources */,
 				22C3787D1DE57BCA008824AA /* ScottNetworkTool.m in Sources */,
 				226360D81DE83AF1009D0CD8 /* ScottUserModel.m in Sources */,
 				225E19B31DE81EEE0018B34B /* ScottLivingCollectionCell.m in Sources */,
 				22E4B36D1DE6C2AD007BF365 /* ScottBaseViewController.m in Sources */,
 				22369D511DF50C950032E2BE /* UIApplication+ScottExtension.m in Sources */,
+				6770DBD31DF599CE002CE852 /* UIView+ScottAutoLayout.m in Sources */,
 				226447C01DEC0FD000817D62 /* ScottCatView.m in Sources */,
 				2235A1161DEE83790072B7FF /* ScottCircleView.m in Sources */,
 				226C70211DE438B200A729DC /* NSDictionary+ScottExtension.m in Sources */,
 				2235A1221DEEC0080072B7FF /* ScottZanButton.m in Sources */,
+				6770DBD01DF599CE002CE852 /* ScottAlertView.m in Sources */,
 				226C700F1DE4331600A729DC /* UIView+ScottFrame.m in Sources */,
-				220D5F8D1DF01AE600BEF671 /* ScottAlertView.m in Sources */,
 				225E19981DE7E4C40018B34B /* ScottPageView.m in Sources */,
 				22E4B38A1DE6C3A9007BF365 /* ScottHotViewController.m in Sources */,
 				22E4B3A41DE6C511007BF365 /* ScottProfileViewController.m in Sources */,
+				6770DBCC1DF599CE002CE852 /* ScottBaseAnimation.m in Sources */,
 				225A85C11DDD859F00A59E38 /* AppDelegate.m in Sources */,
 				226447C51DEC14E500817D62 /* UIViewController+ScottGif.m in Sources */,
 				226C701B1DE434AA00A729DC /* UIImage+ScottExtension.m in Sources */,
+				6770DBCF1DF599CE002CE852 /* ScottScaleFadeAnimation.m in Sources */,
+				6770DBD61DF59A8F002CE852 /* Foundation+Log.m in Sources */,
 				2249DC811DF17DCC00306FAF /* Demo2ViewController.m in Sources */,
 				225E19B71DE827C70018B34B /* ScottLivingBottomView.m in Sources */,
 				225E19AB1DE816DE0018B34B /* ScottBannerModel.m in Sources */,
@@ -1104,29 +1136,27 @@
 				22E4B36A1DE6C282007BF365 /* ScottNavViewController.m in Sources */,
 				2235A1121DEE82E40072B7FF /* ScottLayerViewController.m in Sources */,
 				22369D581DF5478E0032E2BE /* ScottPopMenu.m in Sources */,
-				220D5F8E1DF01AE600BEF671 /* UIView+ScottAutoLayout.m in Sources */,
 				22E4B39F1DE6C4FF007BF365 /* ScottShowViewController.m in Sources */,
 				22E4B3671DE6C26B007BF365 /* ScottMainTabBarController.m in Sources */,
 				22E4B3721DE6C2EB007BF365 /* ScottHomeViewController.m in Sources */,
+				6770DBB11DF59987002CE852 /* CustomActionSheet.m in Sources */,
 				225E19A41DE808BA0018B34B /* ScottLivingCollectionController.m in Sources */,
 				225A85BE1DDD859F00A59E38 /* main.m in Sources */,
 				226447C91DEC231900817D62 /* NSSafeObject.m in Sources */,
-				22E4B3B71DE6D416007BF365 /* NSObject+ScottExtension.m in Sources */,
 				22E4B3B01DE6CB03007BF365 /* UIButton+ScottExtension.m in Sources */,
 				226447B91DEBFC4F00817D62 /* ScottLivingTopView.m in Sources */,
 				225A86291DDD89D500A59E38 /* ScottCaputureController.m in Sources */,
-				220D5F891DF01AE600BEF671 /* ScottBaseAnimation.m in Sources */,
 				225E199C1DE7E6C70018B34B /* ScottLiveCell.m in Sources */,
-				220D5F8C1DF01AE600BEF671 /* ScottScaleFadeAnimation.m in Sources */,
 				226C70181DE4340000A729DC /* UIView+ScottRuntime.m in Sources */,
 				226C701E1DE4380200A729DC /* NSArray+ScottExtension.m in Sources */,
 				22E4B3921DE6C3C8007BF365 /* ScottNewViewController.m in Sources */,
 				225E19A01DE7EBFC0018B34B /* ScottLiveModel.m in Sources */,
 				226360D41DE838BA009D0CD8 /* ScottNewCollectionCell.m in Sources */,
 				67C38DF81DF26947006A4783 /* Demo4ViewController.m in Sources */,
-				220D5F8B1DF01AE600BEF671 /* ScottFadeAnimation.m in Sources */,
 				22E4B3C01DE6DFA4007BF365 /* ScottGPUBeautifyFilter.m in Sources */,
 				226C70091DE4329900A729DC /* UIScreen+ScottExtension.m in Sources */,
+				6770DBD11DF599CE002CE852 /* ScottShowAlertView.m in Sources */,
+				6770DBCE1DF599CE002CE852 /* ScottFadeAnimation.m in Sources */,
 				226C70121DE4335F00A729DC /* UILabel+ScottExtension.m in Sources */,
 				22E4B3BD1DE6DE51007BF365 /* ScottH264Encoder.m in Sources */,
 				225E19931DE7CD820018B34B /* ScottCrownViewController.m in Sources */,
@@ -1134,14 +1164,14 @@
 				22369D4A1DF4F8490032E2BE /* Demo5ViewController.m in Sources */,
 				22AFC5921DE43EAA00634DBD /* UIImageView+ScottWebImage.m in Sources */,
 				22C378781DE570B6008824AA /* NSString+ScottExtension.m in Sources */,
-				220D5F8A1DF01AE600BEF671 /* ScottDropDownAnimation.m in Sources */,
+				6770DBCD1DF599CE002CE852 /* ScottDropDownAnimation.m in Sources */,
 				226C70151DE4339500A729DC /* NSString+ScottPath.m in Sources */,
 				22E4B3AD1DE6CAF3007BF365 /* UIBarButtonItem+ScottExtension.m in Sources */,
-				220D5F8F1DF01AE600BEF671 /* ScottAlertViewController.m in Sources */,
 				226C700C1DE432E800A729DC /* UIColor+ScottExtension.m in Sources */,
 				22E4B37F1DE6C339007BF365 /* ScottCareViewController.m in Sources */,
 				225E19BA1DE82EBD0018B34B /* ScottLivingEndView.m in Sources */,
 				2235A11F1DEEBF8A0072B7FF /* Demo3ViewController.m in Sources */,
+				6770DBD21DF599CE002CE852 /* UIView+ScottAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

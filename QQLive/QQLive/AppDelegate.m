@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "ScottMainTabBarController.h"
 #import "AFNetworking.h"
+#import "ScottAlertView.h"
+#import "ScottShowAlertView.h"
+#import "UIView+ScottAlertView.h"
 
 @interface AppDelegate ()
 
@@ -61,7 +64,11 @@
                 break;
         }
         if (tips.length) {
-            [[[UIAlertView alloc] initWithTitle:@"提示" message:tips delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil] show];
+            ScottAlertView *alertView = [ScottAlertView alertViewWithTitle:@"提示" message:tips];
+            ScottAlertAction *action = [ScottAlertAction actionWithTitle:@"好的" style:ScottAlertActionStyleDestructive handler:nil];
+            [alertView addAction:action];
+            
+            [ScottShowAlertView showAlertViewWithView:alertView backgroundDismissEnable:YES];
         }
     }];
     [_reachiabilityManager startMonitoring];

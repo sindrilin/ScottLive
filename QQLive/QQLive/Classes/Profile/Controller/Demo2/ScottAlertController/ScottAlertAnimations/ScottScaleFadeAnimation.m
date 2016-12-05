@@ -2,7 +2,7 @@
 //  ScottFadeScaleAnimation.m
 //  QQLive
 //
-//  Created by bopeng on 2016/12/1.
+//  Created by Scott_Mr on 2016/12/1.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 

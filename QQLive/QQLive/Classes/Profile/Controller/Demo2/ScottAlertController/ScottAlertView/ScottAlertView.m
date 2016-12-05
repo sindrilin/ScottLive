@@ -2,13 +2,14 @@
 //  ScottAlertView.m
 //  QQLive
 //
-//  Created by bopeng on 2016/12/1.
+//  Created by Scott_Mr on 2016/12/1.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 
 #import "ScottAlertView.h"
 #import "UIView+ScottAutoLayout.h"
 #import "ScottAlertViewController.h"
+#import "UIView+ScottAlertView.h"
 
 @interface ScottAlertAction ()
 
@@ -364,23 +365,11 @@
 - (void)actionButtonClicked:(UIButton *)button {
     ScottAlertAction *action = _actions[button.tag - kButtonTagOffset];
     
-    [(ScottAlertViewController *)self.viewController dismissViewControllerAnimated:YES];
+    [self dismiss];
     
     if (action.handler) {
         action.handler(action);
     }
-}
-
-
-#pragma mark - 通过响应者链找到UIViewController
-- (UIViewController*)viewController {
-    for (UIView* next = [self superview]; next; next = next.superview) {
-        UIResponder* nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController*)nextResponder;
-        }
-    }
-    return nil;
 }
 
 @end

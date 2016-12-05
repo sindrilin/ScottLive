@@ -12,8 +12,9 @@
 #import "ScottProfileViewController.h"
 #import "ScottNavViewController.h"
 #import "UIDevice+ScottExtension.h"
-#import "NSObject+ScottExtension.h"
 #import <AVFoundation/AVFoundation.h>
+#import "ScottAlertViewController.h"
+#import "ScottAlertView.h"
 
 @interface ScottMainTabBarController ()<UITabBarControllerDelegate>
 
@@ -54,20 +55,20 @@
     if ([childVcArray indexOfObject:viewController] == 1) { // 点击个人直播
         // 判断是否是模拟器
         if ([[UIDevice currentDevice] scott_isSimulator]) {
-            [self showInfo:@"请使用真机运行"];
+            [self showNoticeMessage:@"请使用真机运行"];
             return NO;
         }
         
         // 判断是否有摄像头
         if(![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
-            [self showInfo:@"您的设备没有摄像头或者相关的驱动, 不能进行直播"];
+            [self showNoticeMessage:@"您的设备没有摄像头或者相关的驱动, 不能进行直播"];
             return NO;
         }
         
         // 判断是否有摄像头权限
         AVAuthorizationStatus  authorizationStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
         if (authorizationStatus == AVAuthorizationStatusRestricted|| authorizationStatus == AVAuthorizationStatusDenied) {
-            [self showInfo:@"app需要访问您的摄像头。\n请启用摄像头-设置/隐私/摄像头"];
+            [self showNoticeMessage:@"app需要访问您的摄像头。\n请启用摄像头-设置/隐私/摄像头"];
             return NO;
         }
         
@@ -78,7 +79,7 @@
                 if (granted) {
                     return YES;
                 } else {
-                    [self showInfo:@"app需要访问您的麦克风。\n请启用麦克风-设置/隐私/麦克风"];
+                    [self showNoticeMessage:@"app需要访问您的麦克风。\n请启用麦克风-设置/隐私/麦克风"];
                     return NO;
                 }
             }];
@@ -92,6 +93,17 @@
     return YES;
 }
 
+- (void)showNoticeMessage:(NSString *)message {
+    ScottAlertView *alertView = [ScottAlertView alertViewWithTitle:@"提示" message:message];
+    
+    ScottAlertAction *action = [ScottAlertAction actionWithTitle:@"确定" style:ScottAlertActionStyleDestructive handler:^(ScottAlertAction * _Nonnull action) {
+    }];
+    [alertView addAction:action];
+    
+    ScottAlertViewController *alertViewController = [ScottAlertViewController alertControllerWithAlertView:alertView preferredStyle:ScottAlertControllerStyleAlert transitionAnimationStyle:ScottAlertTransitionStyleFade];
+    alertViewController.tapBackgroundDismissEnable = YES;
+    [self presentViewController:alertViewController animated:YES completion:nil];
+}
 
 
 - (void)didReceiveMemoryWarning {

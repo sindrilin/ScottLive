@@ -9,6 +9,9 @@
 #import "Demo2ViewController.h"
 #import "ScottAlertView.h"
 #import "ScottAlertViewController.h"
+#import "CustomAlertView.h"
+#import "CustomActionSheet.h"
+#import "UIImage+ScottExtension.h"
 
 @interface Demo2ViewController ()
 
@@ -37,16 +40,32 @@
     ScottAlertViewController *alertController = [ScottAlertViewController alertControllerWithAlertView:alertView preferredStyle:ScottAlertControllerStyleAlert transitionAnimationStyle:ScottAlertTransitionStyleDropDown];
     alertController.tapBackgroundDismissEnable = YES;
     [self presentViewController:alertController animated:YES completion:nil];
+
 }
 
 /// 自定义形式的alertView
 - (IBAction)customAlertViewClick:(UIButton *)sender {
+    CustomAlertView *alertView = [CustomAlertView alertView];
+    ScottAlertViewController *alertController = [ScottAlertViewController alertControllerWithAlertView:alertView preferredStyle:ScottAlertControllerStyleAlert transitionAnimationStyle:ScottAlertTransitionStyleFade];
+    alertController.tapBackgroundDismissEnable = YES;
+    [self presentViewController:alertController animated:YES completion:nil];
     
 }
 
 /// 模糊背景的alertView
 - (IBAction)effecBgAlertViewClick:(UIButton *)sender {
+    UIImage *img = [UIImage scott_screenShot];
+    img = [UIImage scott_blurImage:img blur:0.4];
     
+    CustomAlertView *alertView = [CustomAlertView alertView];
+    ScottAlertViewController *alertController = [ScottAlertViewController alertControllerWithAlertView:alertView preferredStyle:ScottAlertControllerStyleAlert transitionAnimationStyle:ScottAlertTransitionStyleFade];
+    
+    UIImageView *imgView = [[UIImageView alloc] initWithImage:img];
+    imgView.userInteractionEnabled = YES;
+    alertController.backgroundView = imgView;
+    
+    alertController.tapBackgroundDismissEnable = YES;
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 /// 带有textfield形式的alertView
@@ -83,7 +102,7 @@
 /// 默认形式的actionSheet
 - (IBAction)defaultActionSheetClick:(UIButton *)sender {
     ScottAlertView *alertView = [ScottAlertView alertViewWithTitle:@"ScottActionSheet" message:@"This is a message, the alert view style is actionsheet. "];
-
+    
     [alertView addAction:[ScottAlertAction actionWithTitle:@"默认1" style:ScottAlertActionStyleDefault handler:^(ScottAlertAction *action) {
         NSLog(@"%@",action.title);
     }]];
@@ -97,12 +116,17 @@
     
     ScottAlertViewController *alertController = [ScottAlertViewController alertControllerWithAlertView:alertView preferredStyle:ScottAlertControllerStyleActionSheet];
     alertController.tapBackgroundDismissEnable = YES;
-    [self presentViewController:alertController animated:YES completion:nil];
-}
+    [self presentViewController:alertController animated:YES completion:nil];}
 
 /// 自定义形式的actionSheet
 - (IBAction)customActionSheetClick:(UIButton *)sender {
+    CustomActionSheet *alertView = [CustomActionSheet actionSheet];
     
+    
+    
+    ScottAlertViewController *alertController = [ScottAlertViewController alertControllerWithAlertView:alertView preferredStyle:ScottAlertControllerStyleActionSheet transitionAnimationStyle:ScottAlertTransitionStyleFade];
+    alertController.tapBackgroundDismissEnable = YES;
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 
