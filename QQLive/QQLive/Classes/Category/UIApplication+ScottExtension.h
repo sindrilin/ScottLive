@@ -2,7 +2,7 @@
 //  UIApplication+ScottExtension.h
 //  QQLive
 //
-//  Created by bopeng on 2016/12/5.
+//  Created by Scott_Mr on 2016/12/5.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 

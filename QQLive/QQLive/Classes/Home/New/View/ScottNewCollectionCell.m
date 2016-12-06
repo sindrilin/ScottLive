@@ -2,7 +2,7 @@
 //  ScottNewCollectionCell.m
 //  QQLive
 //
-//  Created by bopeng on 2016/11/25.
+//  Created by Scott_Mr on 2016/11/25.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 

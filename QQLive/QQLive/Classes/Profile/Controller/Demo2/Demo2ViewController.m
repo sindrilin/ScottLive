@@ -2,13 +2,12 @@
 //  Demo2ViewController.m
 //  QQLive
 //
-//  Created by bopeng on 2016/12/2.
+//  Created by Scott_Mr on 2016/12/2.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 
 #import "Demo2ViewController.h"
-#import "ScottAlertView.h"
-#import "ScottAlertViewController.h"
+#import "ScottAlertController.h"
 #import "CustomAlertView.h"
 #import "CustomActionSheet.h"
 #import "UIImage+ScottExtension.h"
@@ -116,7 +115,8 @@
     
     ScottAlertViewController *alertController = [ScottAlertViewController alertControllerWithAlertView:alertView preferredStyle:ScottAlertControllerStyleActionSheet];
     alertController.tapBackgroundDismissEnable = YES;
-    [self presentViewController:alertController animated:YES completion:nil];}
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 
 /// 自定义形式的actionSheet
 - (IBAction)customActionSheetClick:(UIButton *)sender {

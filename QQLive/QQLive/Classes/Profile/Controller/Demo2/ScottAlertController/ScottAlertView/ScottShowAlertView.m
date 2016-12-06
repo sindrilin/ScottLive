@@ -95,16 +95,15 @@
     //增加事件者响应者，
     [_backgroundView addGestureRecognizer:singleTap];
     _tapGesture = singleTap;
-
 }
 
 - (void)tapGestureAction:(UITapGestureRecognizer *)tap {
     [self dismiss];
 }
 
-- (void)setBackgoundTapDismissEnable:(BOOL)backgoundTapDismissEnable {
-    _tapBackgroundDismissEnable = backgoundTapDismissEnable;
-    _tapGesture.enabled = backgoundTapDismissEnable;
+- (void)setTapBackgroundDismissEnable:(BOOL)tapBackgroundDismissEnable {
+    _tapBackgroundDismissEnable = tapBackgroundDismissEnable;
+    _tapGesture.enabled = tapBackgroundDismissEnable;
 }
 
 - (void)didMoveToSuperview {
@@ -169,10 +168,6 @@
             [self removeFromSuperview];
         }];
     }
-}
-
-- (void)dealloc {
-    NSLog(@"%s",__FUNCTION__);
 }
 
 @end

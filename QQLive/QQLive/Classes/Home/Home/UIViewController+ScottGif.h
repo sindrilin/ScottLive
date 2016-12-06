@@ -2,7 +2,7 @@
 //  UIViewController+ScottGif.h
 //  QQLive
 //
-//  Created by bopeng on 2016/11/28.
+//  Created by Scott_Mr on 2016/11/28.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 

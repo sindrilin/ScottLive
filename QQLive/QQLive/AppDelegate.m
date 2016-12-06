@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  QQLive
 //
-//  Created by bopeng on 2016/11/17.
+//  Created by Scott_Mr on 2016/11/17.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 
@@ -34,6 +34,12 @@
     [self checkNetwork];
     
     [self.window makeKeyAndVisible];
+    
+    ScottAlertView *alertView = [ScottAlertView alertViewWithTitle:@"提示" message:@"这是一个提示"];
+    ScottAlertAction *action = [ScottAlertAction actionWithTitle:@"好的" style:ScottAlertActionStyleDestructive handler:nil];
+    [alertView addAction:action];
+    
+    [ScottShowAlertView showAlertViewWithView:alertView backgroundDismissEnable:YES];
     
     return YES;
 }

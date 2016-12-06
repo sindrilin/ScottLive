@@ -117,6 +117,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2224BF061DF65E9200980E4C /* ScottAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScottAlertController.h; sourceTree = "<group>"; };
 		2235A10F1DEE82E40072B7FF /* ScottLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottLayerViewController.h; sourceTree = "<group>"; };
 		2235A1101DEE82E40072B7FF /* ScottLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottLayerViewController.m; sourceTree = "<group>"; };
 		2235A1111DEE82E40072B7FF /* ScottLayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottLayerViewController.xib; sourceTree = "<group>"; };
@@ -911,6 +912,7 @@
 				6770DBC11DF599CE002CE852 /* ScottAlertView */,
 				6770DBCA1DF599CE002CE852 /* ScottAlertViewController.h */,
 				6770DBCB1DF599CE002CE852 /* ScottAlertViewController.m */,
+				2224BF061DF65E9200980E4C /* ScottAlertController.h */,
 			);
 			path = ScottAlertController;
 			sourceTree = "<group>";
