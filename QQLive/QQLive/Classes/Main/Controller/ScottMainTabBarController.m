@@ -86,6 +86,7 @@
         }
         
         ScottShowViewController *showVc = [[ScottShowViewController alloc] init];
+        showVc.naviBarView.hidden = YES;
         [self presentViewController:showVc animated:YES completion:nil];
         return NO;
     }

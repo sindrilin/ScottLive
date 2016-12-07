@@ -20,16 +20,14 @@
 
 @implementation ScottCrownViewController
 
-- (void)loadView {
-    WKWebView *wView = [[WKWebView alloc] initWithFrame:[UIScreen scott_screenBounds]];
-    wView.scrollView.delegate = self;
-    wView.navigationDelegate = self;
-    self.view = wView;
-    self.webView = wView;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen scott_screenWidth], [UIScreen scott_screenHeight] - 64)];
+    _webView.scrollView.delegate = self;
+    _webView.navigationDelegate = self;
+    [self.view addSubview:_webView];
     
     NSURL *url = [NSURL URLWithString:self.urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

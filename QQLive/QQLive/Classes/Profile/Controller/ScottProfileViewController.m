@@ -27,11 +27,15 @@ static NSString *ScottProfileReuseIden = @"ScottProfileReuseIden";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"个人中心";
+    
+//    self.navigationItem.title = @"个人中心";
+    self.titleLabel.text = @"个人中心个人中心个人中心个人中心个人中心个人中心";
     [self setupTableView];
 }
 
 - (void)setupTableView {
+//    [self.view insertSubview:self.tableView belowSubview:self.naviBarView];
+    self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     self.tableView.tableFooterView = [UIView new];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -75,7 +79,7 @@ static NSString *ScottProfileReuseIden = @"ScottProfileReuseIden";
         default:
             break;
     }
-    baseVC.title = self.titleArr[indexPath.row];
+    baseVC.titleLabel.text = self.titleArr[indexPath.row];
     [self.navigationController pushViewController:baseVC animated:YES];
 }
 

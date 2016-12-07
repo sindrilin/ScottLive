@@ -35,12 +35,6 @@
     
     [self.window makeKeyAndVisible];
     
-    ScottAlertView *alertView = [ScottAlertView alertViewWithTitle:@"提示" message:@"这是一个提示"];
-    ScottAlertAction *action = [ScottAlertAction actionWithTitle:@"好的" style:ScottAlertActionStyleDestructive handler:nil];
-    [alertView addAction:action];
-    
-    [ScottShowAlertView showAlertViewWithView:alertView backgroundDismissEnable:YES];
-    
     return YES;
 }
 

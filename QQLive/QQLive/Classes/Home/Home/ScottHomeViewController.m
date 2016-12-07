@@ -41,15 +41,23 @@
 }
 
 - (void)setupNavi {
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"search_15x14"] style:UIBarButtonItemStyleDone target:nil action:nil];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"head_crown_24x24"] style:UIBarButtonItemStyleDone target:self action:@selector(headCrownClick)];
-    self.navigationItem.titleView = self.segmentCtrl;
+    
+    [self.naviBarView addSubview:self.segmentCtrl];
+    
+    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftBtn setImage:[UIImage imageNamed:@"search_15x14"] forState:UIControlStateNormal];
+    self.leftView = leftBtn;
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"head_crown_24x24"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(headCrownClick) forControlEvents:UIControlEventTouchUpInside];
+    self.rightView = btn;
 }
 
 - (void)headCrownClick {
     ScottCrownViewController *crownVC = [[ScottCrownViewController alloc] init];
     crownVC.urlStr = @"http://live.9158.com/Rank/WeekRank?Random=10";
-    crownVC.title = @"排行榜";
+    crownVC.titleLabel.text = @"排行榜";
     [self.navigationController pushViewController:crownVC animated:YES];
 }
 
@@ -88,7 +96,7 @@
 - (UIScrollView *)scrollView {
     if (_scrollView == nil) {
         _scrollView = [[UIScrollView alloc]init];
-        _scrollView.frame = self.view.bounds;
+        _scrollView.frame = CGRectMake(0, 64, CGRectGetWidth(self.view.frame), [UIScreen scott_screenHeight] - CGRectGetHeight(self.naviBarView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame));
         _scrollView.delegate = self;
         _scrollView.pagingEnabled = YES;//分页
         _scrollView.contentSize = CGSizeMake(_scrollView.frame.size.width * self.childViewControllers.count , 0);
@@ -103,7 +111,7 @@
 - (HMSegmentedControl *)segmentCtrl {
     if (!_segmentCtrl) {
         _segmentCtrl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"最热",@"最新",@"关注"]];
-        _segmentCtrl.frame = CGRectMake(45, 0, [UIScreen scott_screenWidth] - 90, 44);
+        _segmentCtrl.frame = CGRectMake(45, 20, [UIScreen scott_screenWidth] - 90, 44);
         _segmentCtrl.shouldAnimateUserSelection = YES;
         _segmentCtrl.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor lightGrayColor]};
         _segmentCtrl.selectedTitleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};

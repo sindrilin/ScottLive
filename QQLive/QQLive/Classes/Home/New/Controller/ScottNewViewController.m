@@ -35,6 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.naviBarView.hidden = YES;
     [self setupCollectionView];
 }
 

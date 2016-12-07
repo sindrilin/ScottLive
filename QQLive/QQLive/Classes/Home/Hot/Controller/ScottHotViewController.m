@@ -37,6 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.naviBarView.hidden = YES;
     [self setupTableView];
 }
 
@@ -114,7 +115,7 @@
     self.bannerView.imageClickBlock = ^(NSInteger index){
         ScottBannerModel *model = weakSelf.bannerArray[index];
         ScottCrownViewController *crownVC = [ScottCrownViewController new];
-        crownVC.title = model.title;
+        crownVC.titleLabel.text = model.title;
         crownVC.urlStr = model.link;
         [weakSelf.navigationController pushViewController:crownVC animated:YES];
     };
@@ -137,6 +138,7 @@
     ScottLivingCollectionController *livingVC = [[ScottLivingCollectionController alloc] init];
     livingVC.lives = self.dataArray;
     livingVC.currentIndex = indexPath.row;
+    livingVC.naviBarView.hidden = YES;
     [self presentViewController:livingVC animated:YES completion:nil];
 }
 

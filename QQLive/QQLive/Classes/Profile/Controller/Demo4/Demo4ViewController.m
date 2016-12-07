@@ -15,6 +15,8 @@
 
 @interface Demo4ViewController ()<ScottPopMenuDelegate>
 
+@property (nonatomic, strong) UIButton *btn;
+
 @end
 
 @implementation Demo4ViewController
@@ -22,27 +24,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *v = [[UIView alloc]  initWithFrame:CGRectMake(10, 10, 50, 50)];
-    v.backgroundColor = [UIColor redColor];
-    [self.view addSubview:v];
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    btn.center = v.center;
-    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [v addSubview:btn];
-    
-    
+    _btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [_btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_btn];
     
     UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     rightBtn.backgroundColor = [UIColor blueColor];
-    rightBtn.frame = CGRectMake(0, 0, 80, 30);
     [rightBtn setTitle:@"添加好友" forState:UIControlStateNormal];
     [rightBtn addTarget:self action:@selector(addFriendClick:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
-    
-    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    self.rightView = rightBtn;
+}
 
-    self.navigationItem.rightBarButtonItems = @[addItem,flexibleSpace];
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    _btn.center = self.view.center;
 }
 
 - (void)addFriendClick:(UIButton *)btn {
@@ -60,7 +56,6 @@
     CGPoint point = [touch locationInView:self.view];
 
     ScottPopMenu *popMenu = [ScottPopMenu popMenuAtPoint:point withTitles:titles icons:icon menuWidth:120 delegate:self];
-    popMenu.translucent = NO;
     popMenu.textFontSize = 12;
 }
 
