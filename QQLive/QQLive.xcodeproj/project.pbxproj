@@ -72,6 +72,7 @@
 		226C701B1DE434AA00A729DC /* UIImage+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C701A1DE434AA00A729DC /* UIImage+ScottExtension.m */; };
 		226C701E1DE4380200A729DC /* NSArray+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C701D1DE4380200A729DC /* NSArray+ScottExtension.m */; };
 		226C70211DE438B200A729DC /* NSDictionary+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C70201DE438B200A729DC /* NSDictionary+ScottExtension.m */; };
+		228B566B1DFAAAC10031BB5D /* ScottTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228B566A1DFAAAC10031BB5D /* ScottTextView.m */; };
 		22AFC5921DE43EAA00634DBD /* UIImageView+ScottWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AFC5911DE43EAA00634DBD /* UIImageView+ScottWebImage.m */; };
 		22C378781DE570B6008824AA /* NSString+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C378771DE570B6008824AA /* NSString+ScottExtension.m */; };
 		22C3787D1DE57BCA008824AA /* ScottNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C3787C1DE57BCA008824AA /* ScottNetworkTool.m */; };
@@ -225,6 +226,8 @@
 		226C701D1DE4380200A729DC /* NSArray+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ScottExtension.m"; sourceTree = "<group>"; };
 		226C701F1DE438B200A729DC /* NSDictionary+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ScottExtension.h"; sourceTree = "<group>"; };
 		226C70201DE438B200A729DC /* NSDictionary+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ScottExtension.m"; sourceTree = "<group>"; };
+		228B56691DFAAAC10031BB5D /* ScottTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScottTextView.h; sourceTree = "<group>"; };
+		228B566A1DFAAAC10031BB5D /* ScottTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScottTextView.m; sourceTree = "<group>"; };
 		22AFC5901DE43EAA00634DBD /* UIImageView+ScottWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ScottWebImage.h"; sourceTree = "<group>"; };
 		22AFC5911DE43EAA00634DBD /* UIImageView+ScottWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ScottWebImage.m"; sourceTree = "<group>"; };
 		22C378761DE570B6008824AA /* NSString+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ScottExtension.h"; sourceTree = "<group>"; };
@@ -369,14 +372,14 @@
 			path = Demo3;
 			sourceTree = "<group>";
 		};
-		22369D461DF4F83B0032E2BE /* Demo5(下拉菜单) */ = {
+		22369D461DF4F83B0032E2BE /* Demo5(人脸识别) */ = {
 			isa = PBXGroup;
 			children = (
 				22369D471DF4F8490032E2BE /* Demo5ViewController.h */,
 				22369D481DF4F8490032E2BE /* Demo5ViewController.m */,
 				22369D491DF4F8490032E2BE /* Demo5ViewController.xib */,
 			);
-			name = "Demo5(下拉菜单)";
+			name = "Demo5(人脸识别)";
 			path = Demo5;
 			sourceTree = "<group>";
 		};
@@ -631,9 +634,19 @@
 			path = SafeObject;
 			sourceTree = "<group>";
 		};
+		228B56681DFAAAA00031BB5D /* ScottTextView */ = {
+			isa = PBXGroup;
+			children = (
+				228B56691DFAAAC10031BB5D /* ScottTextView.h */,
+				228B566A1DFAAAC10031BB5D /* ScottTextView.m */,
+			);
+			path = ScottTextView;
+			sourceTree = "<group>";
+		};
 		22C378791DE57BCA008824AA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				228B56681DFAAAA00031BB5D /* ScottTextView */,
 				225E19951DE7E4C40018B34B /* ScottPageView */,
 				22E4B3B81DE6DCB8007BF365 /* ScottRefreshView */,
 				22C3787A1DE57BCA008824AA /* ScottNetworkTool */,
@@ -819,7 +832,7 @@
 		22E4B3961DE6C4DF007BF365 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				22369D461DF4F83B0032E2BE /* Demo5(下拉菜单) */,
+				22369D461DF4F83B0032E2BE /* Demo5(人脸识别) */,
 				67C38DF41DF26931006A4783 /* Demo4(PopMenu) */,
 				22E4B3A11DE6C511007BF365 /* ScottProfileViewController.h */,
 				22E4B3A21DE6C511007BF365 /* ScottProfileViewController.m */,
@@ -1174,6 +1187,7 @@
 				225E19BA1DE82EBD0018B34B /* ScottLivingEndView.m in Sources */,
 				2235A11F1DEEBF8A0072B7FF /* Demo3ViewController.m in Sources */,
 				6770DBD21DF599CE002CE852 /* UIView+ScottAlertView.m in Sources */,
+				228B566B1DFAAAC10031BB5D /* ScottTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

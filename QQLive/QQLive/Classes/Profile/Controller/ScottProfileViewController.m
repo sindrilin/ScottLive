@@ -86,7 +86,7 @@ static NSString *ScottProfileReuseIden = @"ScottProfileReuseIden";
 #pragma mark - lazy
 - (NSArray *)titleArr {
     if (!_titleArr) {
-        _titleArr = @[@"layer画圆动画",@"自定义alertView",@"点赞动画",@"popMenu",@"下拉菜单"];
+        _titleArr = @[@"layer画圆动画",@"自定义alertView",@"点赞动画",@"popMenu",@"人脸识别"];
     }
     return _titleArr;
 }
